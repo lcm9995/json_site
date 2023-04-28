@@ -205,4 +205,4 @@ function createElementProper(incomingJSON) {
 	circle.style("fill", "steelblue");
 	circle.attr("r", 30);
 	//containerElement.appendChild(newDiv);
-}
+}*/
