@@ -134,6 +134,7 @@ function createPhotoElements() {
   for (let i = 0; i < photosCollection.length; i++) {
     const photo = document.createElement("div");
     photo.classList.add("photo");
+    photo.setAttribute('data-aos', 'flip-left');
     album.appendChild(photo);
 
     const img = document.createElement("img");
@@ -149,6 +150,12 @@ function createPhotoElements() {
     photo.appendChild(date);
   }
 }
+
+createPhotoElements();
+//AOS.init();
+
+
+ 
 
 /*function createPhotoElements(jason) {
   let newPhoto = document.createElement("div");
@@ -172,7 +179,7 @@ for (let i = 0; i < photosCollection.length; i++) {
   createPhotoElements(photosCollection);
 }*/
 
-createPhotoElements();
+
 
 /*
 let songData = [
